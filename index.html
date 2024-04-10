@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    
+        <head>
+            <title>search</title>
+            <link rel="stylesheet" href="/style/header.css">
+            <link rel="stylesheet" href="/style/sidebar.css">
+            <link rel="stylesheet" href="/style/logo.css">
+            <link rel="stylesheet" href="/style/body-search.css">
+            <link rel="stylesheet" href="/style/search-page.css"
+        </head>
+        
+        <body>
+            <div class="wrapper">
+                <header>
+                  <div class="logo">
+                    <img src="/image_logo/image_logo.png" class="image_logo">
+                  </div>
+                </header>
+          
+                <header> 
+                    <div class="header">
+                      
+                      <input type="text" class=" input-number" placeholder="id">
+                      <input type="text" class=" input-name" placeholder="name">
+                      <!--/*垂直輸入*/-->
+                      <textarea class="input-info" rows="1" col="1" placeholder="info">This guy is lazy. He didn't write anything.</textarea>
+          
+                      <!--要判斷回傳是否為 none-->
+                      <select class="web">
+                        <option selected>none</option>
+                        <option  value="1">dfghjfghghjk</option>
+                        <option  value="2">第二</option>
+                        <option  value="3">第三</option>
+                        <option  value="4">第四</option>
+                        <option  value="5">第五</option>
+                      </select>
+                      <button class="add">add</button>
+                    </div>
+                </header>
+          
+                <nav>
+                  <div class="side">
+                    <button class="menu">Menu</button>
+                    <a href="/index.html" target="_blank">
+                      <button class="sidebar-search">
+                        #search
+                      </button>
+                    </a>
+                    <a href="/video.html" target="_blank">
+                      <button class="sidebar-video" >
+                        #video
+                      </button>
+                    </a>
+                    <a href="/manga.html" target="_blank">
+                      <button class="sidebar-manga" >
+                        #manga
+                      </button>
+                    </a>    
+                    <a href="/novel.html" target="_blank">
+                      <button class="sidebar-novel">
+                        #novel
+                      </button>
+                    </a>
+                    
+                  </div>
+                </nav>
+                  
+                <main>
+                <div class="search">
+                  <div class="up">
+                    <input type="text" class="input-bar" placeholder="search id or type">
+                    
+                  </div>
+                  <div class="down">
+                    <select class="type-select option-search" name="">
+                      <option value="" fixed>choose</option>
+                      <option value="type" >type</option>
+                      <option value="id" >id</option>
+                    </select>
+                    <select class="category-select option-search">
+                      <option value="" fixed>category</option>
+                      <option value="video" >video</option>
+                      <option value="manga" >manga</option>
+                      <option value="novel" >novel</option>
+                    </select>
+                    <select class="web-select option-search">
+                      <option value="" fixed>web</option>
+                      <option value="hi" fixed>看漫畫</option>
+                    </select>
+                    <button class="enter">enter</button>
+                  </div>
+                  </div>
+                </main> 
+
+            </div>
+            
+            <script src="/scripts/sidebar.js"></script>
+            <script src="/scripts/search.js" type="module"></script>
+    </body>
+</html>
